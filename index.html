@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natasha's 50th Birthday Celebration</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .rsvp-section {
+        background: #f8f8f8;
+        padding: 60px 20px;
+    }
+
+    .rsvp-section h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .rsvp-section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input, textarea, select {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #444;
+    }
+
+    .scroll-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        background-color: #000;
+        color: white;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .scroll-button:hover {
+        background-color: #444;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Canva Image Sections -->
+<img src="images/section1.png" class="section-image" alt="Birthday Invitation Section 1">
+<img src="images/section2.png" class="section-image" alt="Birthday Invitation Section 2">
+<img src="images/section3.png" class="section-image" alt="Birthday Invitation Section 3">
+<!-- Add more sections as needed -->
+
+<!-- RSVP Section -->
+<div class="rsvp-section" id="rsvp">
+    <h2>RSVP Here</h2>
+    <p>Please let us know if you can join the celebration!</p>
+
+    <!-- Replace with your Formspree link -->
+    <form action="https://formspree.io/f/mzdaoolk" method="POST">
+        
+        <input type="text" name="name" placeholder="Names of guests attending" required>
+
+        <input type="text" name="allergies" placeholder="Any allergies?" required>
+
+        <select name="attendance" required>
+            <option value="">Will you be attending?</option>
+            <option value="Yes">Yes, I’ll be there!</option>
+            <option value="No">Sorry, can’t make it</option>
+        </select>
+
+        <textarea name="message" rows="4" placeholder="Message (optional)"></textarea>
+
+        <button type="submit">Send RSVP</button>
+    </form>
+</div>
+
+<!-- Floating RSVP Button -->
+<a href="#rsvp" class="scroll-button">RSVP</a>
+
+</body>
+</html>
