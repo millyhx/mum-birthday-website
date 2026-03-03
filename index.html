@@ -92,21 +92,20 @@
 
 <!-- RSVP Section -->
 <div class="rsvp-section" id="rsvp">
-    <h2>RSVP Here</h2>
-    <p>Please let us know if you can join the celebration!</p>
+    <h3>RSVP Here</h3>
 
     <!-- Replace with your Formspree link -->
     <form action="https://formspree.io/f/mzdaoolk" method="POST">
-        
-        <input type="text" name="name" placeholder="Names of guests attending" required>
-
-        <input type="text" name="allergies" placeholder="Any allergies?" required>
 
         <select name="attendance" required>
             <option value="">Will you be attending?</option>
             <option value="Yes">Yes, I’ll be there!</option>
             <option value="No">Sorry, can’t make it</option>
         </select>
+        
+        <input type="text" name="name" placeholder="Names of guests attending" required>
+
+        <input type="text" name="allergies" placeholder="Any allergies?" required>
 
         <textarea name="message" rows="4" placeholder="Message (optional)"></textarea>
 
